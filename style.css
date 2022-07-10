@@ -89,6 +89,7 @@ h3 {
 }
 
 .questions_box {
+  border-radius: 0px 0px 10px 10px;;
   background-color: #ffffff;
   padding: 60px;
   text-align: left;
@@ -131,12 +132,11 @@ h3 {
 }
 
 #progress_bar {
-  background-color: #00FFFF;
+  background-color: #15ff00;
   width: 20%;
   height: 10px;
   transition: all 100ms ease-in-out;
 }
-
 #titulo {
   margin-top: 20px;
 }

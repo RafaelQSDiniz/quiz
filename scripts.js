@@ -33,7 +33,8 @@ question_five.addEventListener('click', function(event){
 
 function totalScore(){
 
-    var total_score = 
+    var total_score = 0;
+    totalScore =
     answers.question1+
     answers.question2+
     answers.question3+
@@ -45,7 +46,7 @@ function totalScore(){
 
 function getInfoBasedOnScore(){
     if(totalScore() < 5){
-        var score_info = "você não passou, errou umas coisas ai mano, to decepcionado";
+        var score_info = "você não passou, mais sorte da próxima";
     } else if(totalScore() >= 5){
         var score_info = "Parabéns! Você passou!"
     }
@@ -72,22 +73,20 @@ function nextQuestion(question_number){
 }
 
 submit1.addEventListener('click', function(){
-    if (answers.question1 === 2) { 
-        window.location.href = 'https://ge.globo.com/esports/noticia/gta-rp-o-que-e-e-quais-sao-as-regras-do-fenomeno-entre-streamers.ghtml';}        
     nextQuestion(2);
-    growProgressBar('40%');
+    growProgressBar('40%','#a6ff00');
 })
 submit2.addEventListener('click', function(){
     nextQuestion(3);
-    growProgressBar('60%');
+    growProgressBar('60%','#e5ff00');
 })
 submit3.addEventListener('click', function(){
     nextQuestion(4);
-    growProgressBar('80%');
+    growProgressBar('80%','#ff8800');
 })
 submit4.addEventListener('click', function(){
     nextQuestion(5);
-    growProgressBar('100%');
+    growProgressBar('100%','#ff0000');
 })
 submit5.addEventListener('click', function(){
     nextQuestion(6);
@@ -98,7 +97,9 @@ submit5.addEventListener('click', function(){
     document.getElementById("printscoreinfo").innerHTML = getInfoBasedOnScore();
 })
 
-function growProgressBar(percentage_width){
+function growProgressBar(percentage_width,degrade){
     var bar = document.getElementById("progress_bar");
     bar.style.width = percentage_width;
+    bar.style.background = degrade;
+    
 }
