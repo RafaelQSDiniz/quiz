@@ -1,5 +1,5 @@
 # ⭐Quiz de Conhecimentos Gerais
-link da aplicação: https://rafaelqsdiniz.github.io/whitelist/
+link da aplicação: https://rafaelqsdiniz.github.io/quiz/
 
 ![Demonstração](https://github.com/RafaelQSDiniz/whitelist/blob/main/assets/print_quiz1.png)
 
